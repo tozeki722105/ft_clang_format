@@ -1,0 +1,36 @@
+BasedOnStyle: Google
+
+# インデントの設定
+IndentWidth: 4
+TabWidth: 4
+# 折り返し行にいくつインデントを追加するか
+ContinuationIndentWidth: 8
+#インデントのスペースをtabに変換
+UseTab: ForContinuationAndIndentation
+
+# 引数の並べ方
+AlignAfterOpenBracket: DontAlign
+
+# アクセス指定子の設定
+IndentAccessModifiers: false
+AccessModifierOffset: -4
+
+# 短いコードを一行にまとめない設定
+# func
+AllowShortFunctionsOnASingleLine: Empty
+# if
+AllowShortIfStatementsOnASingleLine: Never
+# switch-case
+AllowShortCaseLabelsOnASingleLine: false
+# while
+AllowShortBlocksOnASingleLine: false
+# for
+AllowShortLoopsOnASingleLine: false
+# enum
+AllowShortEnumsOnASingleLine: false
+
+# {}の改行設定
+BreakBeforeBraces: Linux
+
+# namespaceのインデント
+NamespaceIndentation: Inner
