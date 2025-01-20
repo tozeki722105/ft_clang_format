@@ -8,6 +8,9 @@ ContinuationIndentWidth: 8
 #インデントのスペースをtabに変換
 UseTab: ForContinuationAndIndentation
 
+#連続した関数/変数宣言の整列
+#AlignConsecutiveDeclarations: true
+
 # 引数の並べ方
 AlignAfterOpenBracket: DontAlign
 
@@ -17,7 +20,7 @@ AccessModifierOffset: -4
 
 # 短いコードを一行にまとめない設定
 # func
-AllowShortFunctionsOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Inline
 # if
 AllowShortIfStatementsOnASingleLine: Never
 # switch-case
@@ -34,3 +37,12 @@ BreakBeforeBraces: Linux
 
 # namespaceのインデント
 NamespaceIndentation: Inner
+
+# 行の長さ def=80
+ColumnLimit: 100
+
+#includeファイルのソート
+# SortIncludes: Never
+
+# A<A<int>> -> A<A<int> > にするために
+Standard: Cpp03
